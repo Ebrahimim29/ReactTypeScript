@@ -1,6 +1,11 @@
-type UserinfoType = {name:string, family:string, age:number, skills?:("php" | "laravel")[]}
+import type {  JSX, ReactNode } from "react";
 
-const Userinfo = ( {name,family,age,skills} :UserinfoType) => {
+type UserinfoType = {name:string, family:string, age:number, skills?:("php" | "laravel")[], 
+    // children: ReactNode,
+    children: JSX.Element
+}
+
+const Userinfo = ( {name,family,age,skills,children} :UserinfoType) => {
 
     return(
         <div>
@@ -8,6 +13,7 @@ const Userinfo = ( {name,family,age,skills} :UserinfoType) => {
             <h2>{family}</h2>
             <h3>{age}</h3>
             <h4>{skills}</h4>
+            <h5>{children}</h5>
         </div>
     )
 };

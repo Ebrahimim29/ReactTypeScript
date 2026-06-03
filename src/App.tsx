@@ -1,9 +1,14 @@
 import Userinfo from "./Components/Userinfo";
 
 const App = () => {
-  return(
+  return (
     <div>
-      <Userinfo name="mohammad" family="ebrahimi" age={30} skills={["laravel"]}/>
+      <Userinfo name="mohammad" family="ebrahimi" age={30} skills={["laravel"]}>
+        <div>
+          My Name is Mohammad
+          <p>I love Programming</p>
+        </div>
+      </Userinfo>
     </div>
   )
 };
