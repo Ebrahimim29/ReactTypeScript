@@ -1,4 +1,5 @@
 import ConfirmButton from "./Components/ConfirmButton";
+import Counter from "./Components/Hooks/Counter";
 import InputElement from "./Components/InputElement";
 import Userinfo from "./Components/Userinfo";
 
@@ -11,15 +12,18 @@ const App = () => {
           <p>I love Programming</p>
         </div>
       </Userinfo>
-      <ConfirmButton handleClick={(event) => {
+      <ConfirmButton style={{background:"magenta", fontSize:"1rem", borderRadius:"5px"}} handleClick={(event) => {
         event.stopPropagation()
         event.preventDefault()
         console.log(event);
       }} />
-      <InputElement handleChange={(event) => {
+      {/* <InputElement handleChange={(event) => {
         console.log("input value:", event.target.value);
       }
-      } />
+      } /> */}
+
+      <Counter/>
+      
     </div>
   )
 };
