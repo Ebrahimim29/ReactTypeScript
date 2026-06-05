@@ -1,6 +1,7 @@
 import ConfirmButton from "./Components/ConfirmButton";
-import Counter from "./Components/Hooks/Counter";
-import InputElement from "./Components/InputElement";
+import HookReducer from "./Components/Hooks/HookReducer";
+import HookState from "./Components/Hooks/HookState";
+// import InputElement from "./Components/InputElement";
 import Userinfo from "./Components/Userinfo";
 
 const App = () => {
@@ -22,7 +23,8 @@ const App = () => {
       }
       } /> */}
 
-      <Counter/>
+      <HookState/>
+      <HookReducer/>
       
     </div>
   )
