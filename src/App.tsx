@@ -1,10 +1,24 @@
+import { useContext, useEffect } from "react";
 import ConfirmButton from "./Components/ConfirmButton";
 import HookReducer from "./Components/Hooks/HookReducer";
 import HookState from "./Components/Hooks/HookState";
 // import InputElement from "./Components/InputElement";
 import Userinfo from "./Components/Userinfo";
+import { UserContext } from "./Context/UserContext";
+import UserContextComponent from "./Components/UserCotextComponent";
 
 const App = () => {
+
+  const context = useContext(UserContext)
+
+  useEffect(()=>{
+    context?.setUserInfo({
+      name:"Mohammad Mehdi",
+      family:"Ebrahimi",
+      age: 42
+    })
+  }, [])
+
   return (
     <div className="flex flex-col justify-center items-center m-4">
       <Userinfo name="mohammad" family="ebrahimi" age={30} skills={["laravel"]}>
@@ -25,6 +39,7 @@ const App = () => {
 
       <HookState/>
       <HookReducer/>
+      <UserContextComponent/>
       
     </div>
   )
