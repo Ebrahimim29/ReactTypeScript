@@ -9,10 +9,12 @@ import UserContextComponent from "./Components/UserCotextComponent";
 
 const App = () => {
 
-  const context = useContext(UserContext)
+  // const context = useContext(UserContext)
+  const {setUserInfo} = useContext(UserContext)
 
   useEffect(()=>{
-    context?.setUserInfo({
+    // context?.setUserInfo({
+    setUserInfo({
       name:"Mohammad Mehdi",
       family:"Ebrahimi",
       age: 42
