@@ -6,6 +6,8 @@ import HookState from "./Components/Hooks/HookState";
 import Userinfo from "./Components/Userinfo";
 import { UserContext } from "./Context/UserContext";
 import UserContextComponent from "./Components/UserCotextComponent";
+import SearchComponent from "./Components/Hooks/HookRef/SearchComponent.tsx";
+import TimerComponent from "./Components/Hooks/HookRef/TimerComponent.tsx";
 
 const App = () => {
 
@@ -42,6 +44,8 @@ const App = () => {
       <HookState/>
       <HookReducer/>
       <UserContextComponent/>
+      <SearchComponent/>
+      <TimerComponent/>
       
     </div>
   )
