@@ -8,6 +8,7 @@ import { UserContext } from "./Context/UserContext";
 import UserContextComponent from "./Components/UserCotextComponent";
 import SearchComponent from "./Components/Hooks/HookRef/SearchComponent.tsx";
 import TimerComponent from "./Components/Hooks/HookRef/TimerComponent.tsx";
+import ComponentProp from "./Components/ComponentProp.tsx";
 
 const App = () => {
 
@@ -46,6 +47,7 @@ const App = () => {
       <UserContextComponent/>
       <SearchComponent/>
       <TimerComponent/>
+      <ComponentProp/>
       
     </div>
   )
